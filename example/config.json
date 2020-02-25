@@ -1,9 +1,9 @@
 {
-  "name": "Example",
-  "version": "dev",
-  "slug": "example",
-  "description": "Example add-on by Community Hass.io Add-ons",
-  "url": "https://github.com/hassio-addons/addon-example",
+  "name": "Victron Hassio MQTT",
+  "version": "0.01",
+  "slug": "victron-hassio-mqtt",
+  "description": "How to locally or remotely pull MQTT date from a victron CCGX or VRM portal through MQTT and while keeping the connection alive",
+  "url": "https://github.com/mbfrydman/victron-hassio-mqtt",
   "startup": "application",
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "boot": "auto",
@@ -11,10 +11,10 @@
   "hassio_role": "default",
   "options": {
     "log_level": "info",
-    "seconds_between_quotes": 5
+    "seconds_between_quotes": 300
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)",
-    "seconds_between_quotes": "int(1,120)"
+    "seconds_between_quotes": "int(1,50000)"
   }
 }
